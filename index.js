@@ -2,5 +2,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
+let passwordOneEl = document.getElementById("password-one-el")
+let passwordTwoEl = document.getElementById("password-two-el")
 
-
+function getPasswords() {
+    passwordOneEl.textContent = ""
+    passwordTwoEl.textContent = ""
+    
+    for (let i = 0; i <= 15; i++) {
+        let char1 = Math.floor( Math.random() * characters.length )
+        let char2 = Math.floor( Math.random() * characters.length )
+        passwordOneEl.textContent += characters[char1]
+        passwordTwoEl.textContent += characters[char2]
+    }
+}
