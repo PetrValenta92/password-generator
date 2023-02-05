@@ -69,6 +69,11 @@ span {
   cursor: pointer;
 }
 
+.generate-btn:hover {
+  background-color: var(--neon-green);
+  color: var(--blue);
+}
+
 .line {
   border: 1px solid var(--gray-blue);
 }
